@@ -1,0 +1,370 @@
+/* 
+Theme Name : Portofolio
+Author     : Aku
+Version    : 1.0
+Licence    : 99999$
+*/
+
+/* ==== Header ==== */
+
+*{
+    box-sizing: border-box;
+}
+
+/* PreLoad */
+#preloader{
+    position: fixed;
+    background-color: rgba(161,194,243,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.spinner{
+    width: 56px;
+    height: 56px;
+    border: 6.7px solid #474bff;
+    animation: spinner-kk2y8v 3s infinite;
+}
+
+@keyframes spinner-kk2y8v{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    10%,
+    15%{
+        transform: rotate(-90deg);
+    }
+
+    20%,
+    25%{
+        transform: rotate(-100deg);
+    }
+
+    30%,
+    35%{
+        transform: rotate(-270deg);
+    }
+
+    40%,
+    50%{
+        transform: rotate(-360deg);
+    }
+
+    100%{
+        transform: rotate(720deg);
+    }
+}
+/* End PreLoad */
+
+#header {
+    background-color: #636363;
+
+    position: relative;
+}
+/* Navigation */
+nav{
+    position: relative;
+    background-color: #636363;
+}
+
+nav .navbar-brand{
+    font-size: 32px;
+    font-family: 'Caveat', cursive;
+}
+
+nav a.nav-link{
+    color: #ffffff !important;
+    font-size: 20px;
+}
+
+nav a.nav-link.active,
+nav a.nav-link:hover{
+    color: #414141 !important;
+}
+
+
+/* ===== About ===== */
+#about{
+    position: relative;
+    background-color: #a7a7a7;
+    padding: 120px 0;
+    text-align: center;
+}
+
+#about img{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #636363;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: top center;
+    -o-object-position: top center;
+}
+
+#about h1{
+    position: relative;
+    margin: 0;
+    padding: 25px 0;
+    color: #494949;
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+}
+
+#about h5{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #494949;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* ===== Service ====== */
+
+#service{
+    position: relative;
+    padding: 50px 0;
+    background-color: #7a7a7a;
+}
+
+#service h2{
+    position: relative;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#service .service-list{
+    position: relative;
+    padding: 15px 0;
+}
+
+#service .service-list .service-item{
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#service .service-list .service-item img{
+    width: 50%;
+}
+
+#service .service-list .service-item h3{
+    color: #fff;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+#service .service-list .service-item p{
+    color: #d4d4d4;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#service .service-list .service-item a.btn{
+    background-color: #242424;
+    border: 2px solid #d8d8d8;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    width: 50%;
+}
+
+#service .service-list .service-item a.btn:hover{
+    background-color: transparent;
+    color: #494949;
+}
+
+/* ===== Project ====== */
+
+#project{
+    position: relative;
+    background-color: #a7a7a7;
+    padding: 50px 0;
+}
+
+#project h2{
+    position: relative;
+    margin-bottom: 50px;
+    color: #494949;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#project .project-item {
+    position: relative;
+    margin: 25px 0;
+}
+
+#project .project-item img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: top center;
+    -o-object-position: top center;
+    margin-bottom: 15px;
+}
+
+#project .project-item h3{
+    position: relative;
+    font-size: 20px;
+    color: #636363;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#project .project-item h5{
+    position: relative;
+    color: #494949;
+    font-size: 16px;
+}
+
+/* ====== Testimonial ====== */
+
+#testimonial {
+    position: relative;
+    padding: 50px 0;
+    background-color: #7a7a7a;
+}
+
+#testimonial h2{
+    position: relative;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#testimonial .carousel-item .carousel-content {
+    text-align: center;
+    padding: 0 100px;
+}
+
+#testimonial .carousel-item .carousel-content img{
+    width: 160px;
+    border: 4px solid #fff;
+    margin-bottom: 15px;
+}
+
+#testimonial .carousel-item .carousel-content h5{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#testimonial .carousel-item .carousel-content h6{
+    font-size: 18px;
+    color: #fff;
+}
+
+#testimonial .carousel-item .carousel-content p{
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/* ====== Contact ====== */
+#contact{
+    position: relative;
+    padding: 50px 0;
+    background-color: #a7a7a7;
+}
+
+#contact form{
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    color: #494949;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea{
+    position: relative;
+    padding: 8px 10px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    border: 2px solid #494949;
+}
+
+#contact form button[type="submit"]{
+    position: relative;
+    display: block;
+    width: 50%;
+    background-color: #363636;
+    color: #d1d1d1;
+    border: 2px solid #464646;
+    margin: 15px auto;
+}
+
+#contact form button[type="submit"]:hover{
+    background-color: transparent;
+    color: #06357a;
+}
+
+/* Client */
+#client{
+    position: relative;
+    padding: 50px 0;
+}
+
+#client h2{
+    position: relative;
+    margin-bottom: 50px;
+    color: #a7a7a7;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Footer ====== */
+#footer{
+    position: relative;
+    padding: 10px;
+    background-color: #636363;
+}
+
+footer iframe{
+    position: relative;
+    padding: 0;
+    background-color: #636363;
+}
+#footer p{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+
+/* Responsive */
+@media(max-width:768px) {
+    #service .service-list .service-item img {
+        width: 75%;
+    }
+    
+    #project .project-item h5 {
+        font-size: 12px;
+    }
+
+    #testimonial .carousel-item .carousel-content p{
+        font-size: 16px;
+    }
+}
